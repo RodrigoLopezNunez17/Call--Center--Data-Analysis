@@ -8,7 +8,7 @@ st.set_page_config(
 
 @st.cache_data
 def GetExcelData():
-    df = pd.read_excel(r"C:\Users\roylo\OneDrive\Documentos\Data Science\Proyectos\Call Center\src\Datasets\callCenter.xlsx", engine='openpyxl')
+    df = pd.read_excel(r"Datasets\callCenter.xlsx", engine='openpyxl')
     return df
 
 callCenter = GetExcelData()
